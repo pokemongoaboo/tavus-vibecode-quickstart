@@ -17,12 +17,12 @@ const getInitialSettings = (): Settings => {
   }
   return {
     name: "",
-    language: "en",
+    language: "chinese",
     interruptSensitivity: "medium",
-    greeting: "",
+    greeting: "你好！很高興見到你！",
     context: "",
-    persona: "",
-    replica: "",
+    persona: "pdedc2200e9d",
+    replica: "r62baeccd777",
   };
 };
 

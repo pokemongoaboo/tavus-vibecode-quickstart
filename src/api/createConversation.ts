@@ -21,11 +21,15 @@ export const createConversation = async (
   contextString += settings.context || "";
   
   const payload = {
-    persona_id: settings.persona || "pd43ffef",
+    replica_id: settings.replica || "r62baeccd777",
+    persona_id: settings.persona || "pdedc2200e9d",
     custom_greeting: settings.greeting !== undefined && settings.greeting !== null 
       ? settings.greeting 
-      : "Hey there! I'm your technical co-pilot! Let's get get started building with Tavus.",
-    conversational_context: contextString
+      : "你好！很高興見到你！",
+    conversational_context: contextString,
+    properties: {
+      language: "chinese"
+    }
   };
   
   console.log('Sending payload to API:', payload);
